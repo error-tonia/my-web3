@@ -1,0 +1,107 @@
+/*
+	- "*" means all elements
+
+	Syntax for CSS:
+		selector {
+			property: value;
+		}
+*/
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+/*
+	- background-color: sets the background color for a page
+	- background-image: sets the background image for the page
+	- background-attachment: sets wether the background image will scroll with the rest of the page or not, fixed value will not scroll the page.
+	- background-size:cover, - background-size specifies the size of the background image, cover value will stretch or cut the background image to occupy the whole container of the page.
+
+*/
+
+body {
+	background-image: 
+	linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+	url("./tungtung.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	font-size: 50px;
+	font-weight: 700;
+	color: white;
+}
+
+p {
+	font-family: "Montserrat", sans-serif;
+	color: #e0e0e0;
+}
+
+/*
+	- "#" symbol is used to target an HTML element by its ID attribute
+*/
+#profile {
+	height: 250px;
+	width: 250px;
+
+	border-radius: 50%;
+}
+
+#landing {
+	height: 80vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: 20px;
+	text-align: center;
+}
+
+#landing h1 {
+	max-width: 700px;
+	text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
+}
+#landing h2{
+	font-family: "Playfair Display", serif;
+	font-size: 36px;
+	font-weight: 600;
+	color: #ffffff;
+	margin-bottom: 5px;
+	text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.7);
+}
+.name-description{
+	max-width: 400px;
+}
+
+#landing p {
+	font-family: "Montserrat:, sans-serif;      
+	color: #eeeeee;
+	max-width: 550px;
+	line-height: 1.6;
+}
+
+footer {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+/*
+	- "." targets class attributes
+*/
+.fa-globe, .fa-facebook, .fa-twitter, .fa-tiktok, .fa-instagram {
+	font-size: 25px;
+	color: white;
+	margin: 0 10px 0 10px;
+}
+
+.fa-globe:hover, .fa-facebook:hover, .fa-twitter:hover, .fa-tiktok:hover, .fa-instagram:hover {
+	color: gray;
+}
